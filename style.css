@@ -1,0 +1,508 @@
+body, h2, p, a {
+    margin: o;
+    padding: 0;
+    font-family: Arial sans-serif;
+}
+:root {
+    --blue: #0097D8;
+    --green: #1EB53A;
+    --yellow: #FFD900;
+    --black: #000000;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.6);
+    background: var(--green);
+}
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #B2B3B5;
+    font-family: sans-serif;
+}
+
+.slideshow {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 15 auto;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 20s infinite;
+}
+.s1 {
+    background-image: url("image/img/hall.jpg.jpg" ); animation-delay: 0s;
+}
+.s2 {
+    background-image: url("image/img/jnicc2.jpg.jpg"); animation-delay: 3s;
+}
+.s3 {
+    background-image: url("image/img/jnicc6.jpg.jpg"); animation-delay: 5s;
+}
+.s4 {
+    background-image: url("image/img/jnicc4.jpg.jpg" ); animation-delay: 7s;
+}
+.s5 {
+    background-image: url("image/img/jnicc3.jpg.jpg" ); animation-delay: 9s;
+}
+.s6 {
+    background-image: url("image/img/jnicc7.jpg.jpg"); animation-delay: 11s;
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    25% {opacity: 1;}
+    30% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+
+
+
+
+main, .events, .booking, .contact, .hero {
+    flex: 1;
+}
+header .logo {
+font-size: 28px;
+color: var(--yellow);
+font-weight: bold;
+height: 50;
+width: auto;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+nav a:hover {
+color: var(--yellow);
+}
+.hero {
+    background: linear-gradient(to right, var(--green),
+    var(--blue));
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 20px;
+}
+footer {
+    background-color: var(--black);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+/* Events section*/
+.events {
+    padding: 60px 20px;
+    text-align: center;
+}
+.events h1 {
+    color: darkblue;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.event-card {
+    background-color: white;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px var(--yellow);
+}
+.event-card h2 {
+    color: var(--black);
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.event-card p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 12px 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--blue);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 0 0 20px var(--green);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+main {
+    flex-grow: 1;
+    padding: 50px 30px;
+    background: rgba(0, 0, 0.6);
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 30px auto;
+    color: var(--yellow);
+}
+/*menu style*/
+.menu-icon {
+    display: none;
+    font-size: 35px;
+    color: var(--yellow);
+    padding: 10px;
+    cursor: pointer;
+    
+}
+#menu-toggle {
+    display: none;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        border-radius: 0 0 0 10px;
+    }
+    nav ul li {
+        margin: 15px 0;
+    }
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* booking section*/
+.booking {
+padding: 60px 20px;
+text-align: center;
+}
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+.booking-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: var(--black);
+}
+.booking-form input:focus,
+.booking-form select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.booking-form input:valid {
+    border-color: var(--green);
+}
+.booking-form input:invalid {
+    border-color: red;
+}
+.booking-form button {
+    margin-top: 20px;
+}
+.confirmation {
+    background-color: var(--green);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+/* social media */
+.contact-section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255,0.04);
+    color: var(--yellow);
+    text-align: center;
+}
+.contact-section h2 {
+    color: var(--green);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact-section p {
+    font-size: 17px;
+    margin: 12px o; 
+    background-color: var(--blue);
+    color: white;   
+}
+.service-list {
+    list-style: none;
+    padding: 0;
+    max-width: 20px 0;   
+}
+.services-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.service-list i {
+    color: var(--blue);
+}
+.contact-details {
+margin: 40px 0;
+}
+.contact-details h2 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.icon:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+/* drop-down Aboout us*/
+nav {
+    background: darkolivegreen;
+    display: 15px;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: darkolivegreen;
+    min-width: none;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: #fff;
+}
+/* about us */
+.title {
+    text-align: center;
+    margin: 30 0px;
+    font-size: 40px;
+    color: #FFD900;
+}
+.About-section {
+padding: 50px 20px;
+text-align: center;
+}
+.About-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.About-section p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+line-height: 1.7;
+}
+.darkblue {
+    background-color: #001f4d;
+}
+.white {
+    background-color: #fff;
+    color: #000;
+}
+.olivegreen {
+    background-color: orange;
+}
+.About-section {
+    transition: all 0.3s ease-in-out;
+}
+/* event code*/
+.title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+    color: #001f4d;
+}
+.event-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.event-section select {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #001f4d;
+    border-radius: 10px;
+    outline: none;
+}
+.event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.event-details div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  text-align: left; 
+}
+.event-details h2 {
+    color: #001f4d;
+}
+.event-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+/* addition in index */
+.intro-section {
+    background-color: #1fd655;
+    text-align: center;
+    padding: 40px 20px;
+}
+.features-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 30px;
+background: url('image/img/hall.jpg.jpg') repeat-x;
+background-size: contain;
+animation: scroll-bg 60s linear infinite;
+}
+@keyframes scroll-bg {
+    from { background-position: 0 0;}
+    to {background-position: 100% 0;}
+}
+.features-box {
+flex: 1 1 250px;
+margin: 10px;
+padding: 20px;
+background-color: #FF8C00;
+color: white;
+border-radius: 12px;
+text-align: center;
+}
+.qr-section {
+    background-color: var(--yellow);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+.footer {
+    background-color: darkcyan;
+}
+.download-btn {
+    background-color: #FF8C00;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+.scan-text {
+    color: #003366;
+    margin-top: 10px;
+}

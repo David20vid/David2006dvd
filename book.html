@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="image/img/logo.png.png" height="150" width="180">
+    <img src="image/img/back.jpg.jpg" alt="" height="200" width="250">
+    <header>
+        <div class="logo">JNICC EVENTS</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776</label>
+        <nav>
+            <ul>
+                <li><a href="index.html" arial-current="page"><i>HOME</i></a></li>
+            <li><a href="about.html"><i>ABOUT US</i></a></li>
+            <li><a href="event.html"><i>EVENTS</i></a></li>
+            <li> <a href="contact.html"><i>CONTACT</i></a></li>
+            <li><a href="book.html"><i>BOOK TICKET</i></a></li>
+           
+            
+           
+            </ul>
+        </nav>
+
+    
+
+    </section>
+    
+    <section class="booking">
+        <h1><i><marquee>Book Your Ticket</marquee></i></h2>
+        <form action="#" method="POST" class="booking-form">
+<label>Full Name:</label>
+<input type="text" name="name" required pattern="[A_Za-z\s]{8,}" id="full name"
+placeholder="Enter Your full name">
+<label>Phone Number</label>
+<input type="tel" name="phone" required pattern="(\+255|0)[0-9]{8}"
+placeholder="+255xxxxx">
+<label>Email</label>
+<input type="email" name="email" required placeholder="sample@gmail.com">
+<label>Select Event</label>
+<select name="event" required>
+    <option value="">--choose an event</option>
+    <option value="AI_summit">AI_summit</option>
+    <option value="business_forum">business_forum</option>
+    <option value="veta_aniversaly">veta_aniversaly</option>
+    <option value="innovetor_day">innovetor_day</option>
+    <option value="health_tech">Health_tech</option>
+    <option value="TCAA_meeting">TCAA_meeting</option>
+    <label>Number of Ticket</label>
+    <input type="number" name="ticket" min="1" max="10" required>
+<button type="submit" class="btn">Submit booking</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>@ 2025 JNICC | All Right Reserved</p>
+    </footer>
+   <script src="index.js"></script> 
+</body>
+</html>
